@@ -1,0 +1,134 @@
+
+/*Blog news section*/
+
+.blog{
+	float: left;
+	width: 100%;
+	padding:80px 0px; 
+	background-color:#292929;
+}
+h2.title{
+  font-size:30px;
+  font-weight: 600;
+  margin:0;
+  padding-bottom:70px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#f3971b;
+ position: relative;
+ letter-spacing:.5px;
+}
+h2.title::before{
+	content: '';
+	position: absolute;
+	width:80px;
+	height: 2px;
+    left: 50%;
+    margin-left:-40px;
+    top:50px;
+    background-color: #f3971b;
+}
+
+.blog .blog-content{
+	float: left;
+	width: 100%;
+}
+
+.blog .blog-content .card{
+	float:left;
+	width: 90%;
+	padding:15px;
+	padding-left:150px;
+}
+
+.blog .blog-content .card .box{
+	background-color: #353535;
+	position: relative;
+}
+.blog .blog-content .card .box h4{
+	margin:0;
+	padding:15px 15px 5px;
+	color:#f3971b;
+	font-size:16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing:.5px;
+}
+.blog .blog-content .card .box h3{
+	margin:0;
+	padding:10px 15px 10px;
+	color:#ffffff;
+	font-size:20px;
+	font-weight: 600;
+	letter-spacing:.5px;
+}
+.blog .blog-content .card .box p{
+	color:#c2c0c3;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing:.5px;
+	text-align: left;
+	font-weight: 400;
+	padding:0px 15px 15px;
+	margin:0px;
+}
+
+.btn-bg{
+	padding:12px 40px;
+	border-radius:0;
+	font-size: 16px;
+	color:#f3971b;
+	background-color: transparent;
+	font-weight:400; 
+	border:1px solid #f3971b;
+	letter-spacing:.5px;
+	cursor: pointer;
+	transition:all .5s ease;
+}
+
+.btn-bg:hover{
+border:1px solid #f3971b;
+color:#f3971b;
+background-color:transparent;
+}
+
+.btn-bg:hover{
+	color:#ffffff;
+	background-color:#f3971b;
+}
+
+/*Contact section*/
+.contact{
+	float:left;
+	width:100%;
+	padding:100px 0px;
+	background-color:#353535;
+}
+.contact .contact-content{
+	margin:auto;
+	max-width:650px;
+}
+
+.contact .contact-content input,
+.contact .contact-content textarea{
+	height:50px;
+	border:none;
+	border-left:2px solid transparent;
+	padding:10px 15px;
+	color:#ffffff;
+	margin-bottom:30px;
+	font-size:16px;
+	letter-spacing:1px;
+	font-weight:400;
+	display:block;
+	width:100%;
+	background-color:#292929;
+	transition:border .5s ease;
+}
+.contact .contact-content input:focus,
+.contact .contact-content textarea:focus{
+	border-color:#f3971b;
+}
+.contact .contact-content textarea{
+	height: 200px;
+}

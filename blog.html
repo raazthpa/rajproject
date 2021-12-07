@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!--  Title -->
+    <title> Blogs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Stylesheet -->
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/styleblogcontact.css">
+	</head>
+	<body>
+	   <!-- Start Header  -->
+	 <header>
+	    <!-- using internal CSS -->
+	   <style>
+	       #remaining{
+		     display:none;
+			 }
+		   header{
+		   background-color:#292929;
+		   }	
+	   </style>
+	   <div class="container">
+	     <div class="row">
+	        <div class="brand-name">
+			    <a class="logo">Raaz Thapa</a>
+	        </div>
+			    <!-- Navigation bar -->
+			   <div class="navbar">
+				  <ul>
+		            <li><a href="index.html">Home</a><li>
+		            <li><a href="cv.html">CV</a><li>
+		            <li><a href="blog.html" class="active">Blogs</a><li>
+		            <li><a href="contact.html">Contact</a><li>
+                    <li><a href="research.html">Research</a><li>						
+				  </ul>
+			   </div>
+         </div>
+	   </div>
+     </header>	
+	  <!-- End Header -->
+
+     <!--Blog section starts -->
+     <section class="blog" id="blog">
+   	   <div class="container">
+   	 	  <h2 class="title">Blog</h2>
+   	 	    <div class="blog-content">
+   	 	       <div class="card">
+   	 	   	  	  <div class="box">
+   	 	   	  	  	  <img src="images/blog.jpg" style="width:100%;"  height="400vh;" alt="blog" />
+   	 	   	  	  	  <h4>january 15,2020 </h4>
+   	 	   	  	  	  <h3>How Does Technology Impact our Daily Life?</h3>
+   	 	   	  	  	  <p>Over the last two decades, our lives have been slowly taken over by technology. 
+					  Take a moment to look around you. How many screens do you see? Did you include the 
+					  one you’re reading this on?Our Wi-Fi-enabled gadgets have changed the way we work, 
+					  play, and even raise our children. Today’s offices would be unrecognizable to workers 
+					  of the past thanks to the proliferation of emails, video conferencing, tablets, laptop
+					  computers, and other relatively recent innovations. Meanwhile, more and more of our 
+					  personal time is influenced by our gadgets (OK, smartphones) with each passing day.<br>So
+					  have we reached peak-technology? Hardly.The novelty of constant online connections and 
+					  instant communication may have begun to wear thin for older generations, but the next wave 
+					  of Americans have no such qualms. Their tech-dependent lifestyles are already causing huge 
+					  changes in both the professional and private spheres. The change may be inevitable…unless 
+					  the Wi-Fi cuts out, of course.<span id="remaining"> 
+					 <br><br>For most of the last century, communicating professionally meant writing letters, 
+					 sending faxes,
+					 or spending hours on the phone. Not anymore. Email is now the primary means of communication in 
+					 the modern workplace. We are communicating more, faster, and better than ever before. And employers
+					 have been reaping the benefits. A major report cited by British newspaper The Telegraph found that 
+					 the incorporation of technology into the workplace has led to an “84% increase in productivity per 
+					 hour for office workers since the 1970s.” The major influencers? Email, business software, and yes,
+					 even cell phones. We don’t leave technology at the workplace. In fact, our private lives might be
+					 even more tech-enabledthan our professional lives. In the 1980s and 1990s, our televisions were often
+					 the height of our home technology. Some people had clunky personal computers, a Nintendo for the kids,
+					 and maybe even a telephone in their car (remember those?).The only time we don’t use technology is when
+					 we are exercising flying sleeping, well, dead.<br><br>
+					 Technology is now so integrated with our lives that going without it can cause severe anxiety for some.
+					 It’s not hard to see why. Technology has taken over.Both our professional and personal lives are now 
+					 technology dependent.While older generations are fighting back with unplugged retreats,the next wave of
+					 Americans can’t picture their lives without tech. They might not have anything to worry about. The future
+					 favors these digital natives.</span> </p>
+   	 	   	  	  	 <p><button onclick="Changestyle();" class="btn-bg" id="myButton">Read More</button></p>
+   	 	   	  	  </div>
+   	 	   	  </div>
+		   </div>
+	   </div>
+	   <!-- Using Javascript for read more buttton-->
+   	  <script>
+        function Changestyle(){
+          var moreText= document.getElementById("remaining");
+          var bttn= document.getElementById("myButton");
+          if(moreText.style.display == "none"){
+          moreText.style.display = "inline";
+          bttn.innerHTML="Read less.";
+          }
+          else{
+           moreText.style.display = "none";
+           bttn.innerHTML="Read More";
+          }
+        }
+      </script>
+    </section>
+	 <!-- Blog section ends -->
+		
+	 <!--Footer section starts -->
+	   <footer>
+	       <!-- Giving social links-->
+         <div class="social-links">
+   	  	  	 	 <a href="https://www.facebook.com/raj.thapa.khattri"><span class="fa fa-facebook"></span></a>
+   	  	  	 	 <a href="mailto: dipendrathapa479@gmail@.com"><span class="fa fa-google"></span></a>
+   	  	  	 	 <a href="https://twitter.com/Rajthap40815290"><span class="fa fa-twitter"></span></a>
+   	  	  	 	 <a href="https://www.instagram.com/r_azz.th/?hl=en"><span class="fa fa-instagram"></span></a>
+   	  	  	          <p style="text-align:center;color:#c2c0c3;">Copyright @ 2020. All rights reserved. </p>
+   	  	 </div>
+      </footer>	
+	   <!--Footer section ends -->
+	</body>
+</html>
